@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>王子设计</title>
+  <meta name="description" content="王子设计，专为广告同行设计。">
+  <meta name="keywords" content="王子设计,平面设计,海报设计,展板设计,门头设计,3D效果图,工装设计,家装设计">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="王子设计">
+  <meta property="og:description" content="专为广告同行设计。平面设计、3D效果图、空间视觉方案作品展示。">
+  <meta property="og:image" content="./assets/轮播图/01.jpg">
+  <meta property="og:locale" content="zh_CN">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="王子设计">
+  <meta name="twitter:description" content="专为广告同行设计。平面设计、3D效果图、空间视觉方案作品展示。">
+  <meta name="twitter:image" content="./assets/轮播图/01.jpg">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="site-bg"></div>
+
+  <header class="hero" id="top">
+    <nav class="topbar">
+      <a class="brand" href="#top">
+        <span class="brand-mark">
+          <img src="./assets/6.jpg" alt="王子设计 logo" class="brand-logo" draggable="false">
+        </span>
+        <span class="brand-copy">
+          <strong>王子设计</strong>
+          <small>专为广告同行设计</small>
+        </span>
+      </a>
+      <div class="nav-links">
+        <a href="#library">作品库</a>
+        <a href="#services">业务范围</a>
+        <a href="#contact">联系我们</a>
+      </div>
+    </nav>
+
+    <div class="hero-banner">
+      <div class="hero-carousel-shell">
+        <div class="hero-carousel" id="heroCarousel">
+          <div class="hero-carousel-track" id="heroCarouselTrack"></div>
+          <div class="hero-carousel-dots" id="heroCarouselDots"></div>
+        </div>
+
+        <div class="hero-info-bar">
+          <div class="hero-info-main">
+            <p class="hero-carousel-label">Design Portfolio</p>
+            <h1>王子设计</h1>
+            <p class="hero-text">
+              平面设计、空间视觉、3D效果图案例展示。先看精选横幅，再按大类与小类快速浏览完整作品。
+            </p>
+          </div>
+
+          <div class="hero-info-side">
+            <div class="hero-meta">
+              <strong id="heroCarouselTitle">作品精选</strong>
+              <span id="heroCarouselMeta">点击下方分类继续查看</span>
+              <small>轮播图建议使用 21:9 横版宽图</small>
+            </div>
+            <div class="hero-actions">
+              <a class="primary-button" href="#library">进入作品库</a>
+              <a class="ghost-button" href="#contact">联系我们</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="library" id="library">
+      <div class="section-head section-head-split">
+        <div>
+          <p class="eyebrow">Library</p>
+          <h2>作品库</h2>
+        </div>
+        <p id="libraryIntro">点击分类切换，直接查看当前类目的全部作品。</p>
+      </div>
+
+      <div class="category-panel">
+        <div class="segment" id="groupTabs" role="tablist" aria-label="大类切换"></div>
+        <div class="subnav" id="subTabs" role="tablist" aria-label="小类切换"></div>
+      </div>
+
+      <div class="active-bar">
+        <h3 id="casesTitle">案例展示</h3>
+        <span id="casesCount">0张</span>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid" aria-live="polite"></div>
+    </section>
+
+    <section class="services" id="services">
+      <div class="section-head section-head-split">
+        <div>
+          <p class="eyebrow">Services</p>
+          <h2>业务范围</h2>
+        </div>
+        <p>面向广告与空间视觉项目的常用设计服务。</p>
+      </div>
+      <div class="services-grid" id="servicesGrid"></div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="contact-card">
+        <div class="contact-copy">
+          <p class="eyebrow">Contact</p>
+          <h2>联系我们</h2>
+          <p>项目沟通、案例咨询、合作对接，可直接通过微信联系。</p>
+          <p class="contact-note">适合品牌视觉、展陈设计、空间效果图等合作需求对接。</p>
+        </div>
+        <div class="contact-info">
+          <div class="contact-qr">
+            <img src="./assets/contact-wechat-qr.png" alt="王子设计微信二维码" class="contact-qr-image" draggable="false">
+          </div>
+          <div class="contact-details">
+            <span>微信</span>
+            <strong>yingxiao1d</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <span>王子设计</span>
+      <span>微信：yingxiao1d</span>
+    </footer>
+  </main>
+
+  <dialog class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="关闭">×</button>
+    <img id="lightboxImage" alt="">
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+  </dialog>
+
+  <script src="./projects.js"></script>
+  <script src="./script.js"></script>
+</body>
+</html>
